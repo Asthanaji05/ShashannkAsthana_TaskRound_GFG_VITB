@@ -23,11 +23,20 @@ nav:hover{
     color: green;
 }
 
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    background-image: linear-gradient(165deg,#1e1e1e 40%, green);
+    padding: 0;
+    margin: 0;
+    border:none;
 
+}
 
 #top{
     display: flex;
-    background-image: linear-gradient(135deg,#1e1e1e 40%, green);
+    height: max-content;
 }
 a{
     color: white;
@@ -35,22 +44,32 @@ a{
     text-decoration: none;
     display: flex;
     margin-right: 10px;
+    padding: 5px;
+    border-right: 1px solid white;
+    border-radius: 8px;
 }
 a:hover{
-    color:green;
-    font-family: monospace;
+    background-image: linear-gradient(135deg,#1e1e1e 40%, green);
 }
-#head{
+#ht{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
+    font-size: 40px;
+    font-family: Arial,Helvetica, sans-serif;
+    background-clip: border-box;
+    background: linear-gradient(to right, #23cf65 20%, #04b870,#15cb4b 80%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container{
+    display: flex;
 }
 .div-head{
-    padding-left: 20%;
-    padding-right: 20%;
+    width: 50%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -58,16 +77,20 @@ a:hover{
     border:1px solid grey;
     border-radius: 8px;
     background-color: #1e1e1e;
-    background-image: linear-gradient(135deg,#1e1e1e 40%, green);
+    background-image: linear-gradient(135deg,rgb(0,0,0),#313231 10%, rgb(0, 0, 0),#313231 60%, rgb(0, 0, 0));
     font-family: monospace;
     font-weight: bolder;
     font-size: medium;
 }
+.div-head:hover{
+    background-image: linear-gradient(135deg,rgb(0,0,0),#174117 10%, rgb(0, 0, 0),#103e10 30%, rgb(0, 0, 0),#174117, rgb(0, 0, 0));
+}
 .div-head img{
     border-radius: 8px;
     width:60%;
-    height: 60%;
-    padding-bottom: 10px;
+    height: 60dvh;
+    margin: 10px;
+    border: 1px solid white;
 }
 footer{
     background-color: #1e1e1e;
